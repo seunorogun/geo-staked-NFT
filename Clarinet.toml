@@ -1,0 +1,23 @@
+[project]
+name = "geo-staked-NFT"
+authors = []
+description = ""
+telemetry = true
+requirements = []
+cache_dir = "/home/runner/workspace/geo-staked-NFT/./.requirements"
+boot_contracts = ["pox", "costs-v2", "bns"]
+[contracts.geo-staked-NFT]
+path = "contracts/geo-staked-NFT.clar"
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
